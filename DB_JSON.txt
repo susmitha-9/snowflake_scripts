@@ -385,7 +385,7 @@ courses.value:enrolled_students::integer as univ_faculty_dept_course_students,\
 from JSON_TABLE6,\
 lateral flatten(input=>data:university)as university,\
 lateral flatten(input=>university.value:departments)as departments,\
-lateral flatten(input=>departments.value:courses)as courses\ 
+lateral flatten(input=>departments.value:courses)as courses\
 \
 \
 \
